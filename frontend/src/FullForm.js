@@ -41,7 +41,7 @@ function FullForm(){
 return(
 <>
 
-<div class="container">
+<div className="container">
 <h1>📚 Acronym Buddy</h1>
 <form onSubmit={find}>
 	<label>Enter The Acronym</label><br/>
@@ -54,4 +54,5 @@ return(
 </>
 )
 }
+
 export default FullForm;
