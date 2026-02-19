@@ -15,10 +15,7 @@ const con = mysql.createPool({
   port: 3306,
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0,
-		  ssl: {
-    rejectUnauthorized: false
-  }
+  queueLimit: 0
 });
 
 app.get("/find",(req,res)=>{
@@ -42,5 +39,6 @@ app.listen(PORT,()=>{
 	console.log("Ready to serve @",PORT);
 
 });
+
 
 
