@@ -25,13 +25,12 @@ function FullForm(){
 		.then(
 			(res)=>{
 				if(res.data.fullform){
-			setMsg(res.data.fullform);
+			setMsg(word+" : "+res.data.fullform);
 		}
 		else{
                     setMsg(res.data.message);
+			    setWord(""); 
                 }
-
-                setWord(""); 
             })
             .catch((err) => {
                 setMsg("Server error. Try again.");
@@ -56,3 +55,4 @@ return(
 }
 
 export default FullForm;
+
