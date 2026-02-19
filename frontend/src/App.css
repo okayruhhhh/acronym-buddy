@@ -1,0 +1,85 @@
+
+* {
+	
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Chewy','Nunito', sans-serif;
+}
+.container:hover {
+  cursor: pointer;
+}
+
+body {
+  background: #fdf6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* changed */
+  padding: 20px;       /* optional but recommended */
+}
+
+
+/* Main Card */
+.container {
+  background: #fff;
+  width: 400px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 12px 12px 0px #ffd6e0;
+  border: 3px solid #222;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #222;
+	letter-spacing:1px;
+}
+
+/* Input */
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  border-radius: 15px;
+  border: 3px solid #222;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  background: #fefae0;
+  margin-bottom: 20px;
+}
+
+/* Button */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
+  border: 3px solid #222;
+  background: #caffbf;
+  font-weight: 550;
+  cursor: pointer;
+  font-size:20px;
+  box-shadow: 5px 5px 0px #222;
+}
+
+input[type="submit"]:active {
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+h2 {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333;
+  background: #e0fbfc;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px dashed #222;
+}
+
+
