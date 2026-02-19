@@ -21,13 +21,6 @@ const con = mysql.createPool({
   }
 });
 
-con.connect((err) => {
-    if (err) {
-        console.log("DB Connection Failed:", err);
-    } else {
-        console.log("DB Connected Successfully");
-    }
-});
 app.get("/find",(req,res)=>{
 	let data=req.query.word;
 	let sql="select fullform from fullform where acronym=?";
@@ -49,4 +42,5 @@ app.listen(PORT,()=>{
 	console.log("Ready to serve @",PORT);
 
 });
+
 
